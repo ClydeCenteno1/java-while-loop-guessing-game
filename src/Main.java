@@ -44,12 +44,15 @@ public class Main {
                 System.out.println("Try again later, too many attempts.");
             }
 
-            System.out.println("Would you like to continue playing? (y/n)");
+            System.out.print("Would you like to continue playing (y/n): ");
             String answer = scanner.next();
             answer = answer.toLowerCase();
             playAgain = answer.equals("y");
 
         } while (playAgain);
+
+
+        System.out.print("Thank you for playing!");
         scanner.close();
     }
 }

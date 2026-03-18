@@ -25,11 +25,17 @@ public class Main {
 
                 if (guess < 1 || guess > 100) {
                     System.out.println("Pick a number between 1-100");
-                } else if (guess < secretNum) {
+                }
+
+                else if (guess < secretNum) {
                     System.out.println("Too low, guess higher");
-                } else if (guess > secretNum) {
+                }
+
+                else if (guess > secretNum) {
                     System.out.println("Too high, guess lower");
-                } else {
+                }
+
+                else {
                     System.out.println("Good job! You guessed the number!");
                 }
             }

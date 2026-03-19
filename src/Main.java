@@ -47,7 +47,7 @@ public class Main {
             System.out.print("Would you like to continue playing (y/n): ");
             String answer = scanner.next();
             answer = answer.toLowerCase();
-            playAgain = answer.equals("y");
+            playAgain = answer.equalsIgnoreCase("y");
 
         } while (playAgain);
 
